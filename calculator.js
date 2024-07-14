@@ -33,7 +33,7 @@ function calculatorButton(e) {
         if (errorMessage) {
         }
 
-        else if (e.target.id == 'equals') {
+        else if (e.target.id == 'equals' && display.textContent != '') {
 
             if (previousNumber != 'ERROR') {
                 console.log('prevNumber', previousNumber);
@@ -66,10 +66,13 @@ function calculatorButton(e) {
         }
 
         else {
-            previousNumber = Number(display.textContent);
             currentOperation = e.target.textContent;
+            
+            if (display.textContent != '') {
+                previousNumber = Number(display.textContent);
 
-            display.textContent = '';
+                display.textContent = '';
+            }
         }
     }
 

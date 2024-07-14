@@ -1,12 +1,32 @@
-#calculator h1 {
+#title {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0;
+
+    color: #38352e;
+}
+
+#calculator #result {
     height: 40px;
     text-align: center;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
+
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 15px 0px;
+
+    border-color: #38352e;
 }
 
 #calculator {
+    margin-top: 30px;
     width: max-content;
     margin-left: auto;
     margin-right: auto;
@@ -35,9 +55,13 @@ button {
     border-color: transparent;
     width: 100px;
     height: 100px;
+
+    font-size: large;
 }
 
 .smallButton {
     width: 80px;
+    font-size: small;
+    background-color:#1eb2e8;
 }
 
